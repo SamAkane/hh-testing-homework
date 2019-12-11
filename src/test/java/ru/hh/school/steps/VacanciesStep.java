@@ -36,4 +36,8 @@ public class VacanciesStep {
     public void assertErrorCode(int expectedErrorCode, int actualErrorCode) {
         Assert.assertEquals("Error code отличается от ожидаемого", expectedErrorCode, actualErrorCode);
     }
+
+    public void assertResponseContainsParams(VacanciesResponseHolder response) {
+
+    }
 }

@@ -17,7 +17,7 @@ public class VacanciesTest {
     public void test() throws IOException {
         VacanciesResponseHolder response = step.getVacancies(parameter);
         step.assertStatusCode(expectedHttpStatus, response.getHttpStatus());
-        step.assertErrorCode(expectedErrorCode, response.getErrorCode());
+        step.assertResponseContainsParams(response);
     }
 
     @Parameterized.Parameter(0)

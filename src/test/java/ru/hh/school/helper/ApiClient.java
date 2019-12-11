@@ -21,7 +21,7 @@ public class ApiClient {
     public HttpResponse get(String endpoint, String parameter/*, BasicHeader ... headers*/) throws IOException {
         HttpClient client = HttpClients.createDefault();
 
-        HttpGet get = new HttpGet(endpoint + "?text=" + parameter);
+        HttpGet get = new HttpGet(BASE_URL + endpoint + "?text=" + parameter);
         /*for (BasicHeader head : headers) {
             get.setHeader(head.getName(), head.getValue());
         }*/
